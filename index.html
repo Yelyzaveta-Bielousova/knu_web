@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_1_Bielousova</title>
+    <!--Перший спосіб підключення css до html-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Другий спосіб підключення css до html-->
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container__menu">
+        <ul class="container__menu--list">
+            <li class="menu__list--item"><a href="#" class="list__item--link">Один</a></li>
+            <li class="menu__list--item"><a href="#" class="list__item--link">Два</a></li>
+            <li class="menu__list--item"><a href="#" class="list__item--link">Три</a></li>
+            <li class="menu__list--item"><a href="#" class="list__item--link">Чотири</a></li>
+            <li class="menu__list--item"><a href="#" class="list__item--link">П'ять</a></li>
+            <li class="menu__list--item"><a href="#" class="list__item--link"></a></li>
+        </ul>
+    </nav>
+
+    <div class="container__text">
+        <div class="container__text--card">
+            <h2 class="card__title">Новини</h2>
+            <p class="card__text--item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin ultrices dictum. Nullam non
+                diam vestibulum, interdum nibh quis, sollicitudin sem. Vivamus sit amet sagittis massa. Cras aliquet
+                lacus at interdum blandit. Quisque quis tellus nunc. Cras at nisi laoreet, suscipit nibh quis,
+                pellentesque diam.
+            </p>
+            <p class="card__text--item">
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a
+                bibendum orci. Sed fermentum consequat mauris adipiscing condimentum. Phasellus id convallis
+                nunc. Nullam vel mollis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Cras nec neque vel risus accumsan sollicitudin quis ut velit. Fusce et libero
+                hendrerit, accumsan enim non, dictum eros. Proin sem justo, porta id magna quis, consequat
+                scelerisque urna.
+            </p>
+            <input type="checkbox" id="more-news">
+            <label for="more-news" class="card__text--readmore"></label>
+            <div class="card__text--more">
+                <p class="card__text--item">
+                    Aliquet hendrerit pellentesque natoque sem ullamcorper; odio maximus porttitor habitant. Amet faucibus odio 
+                    interdum arcu aenean montes; platea tempus sagittis. Mauris nascetur phasellus vivamus torquent facilisis 
+                    cursus cubilia. Rhoncus commodo massa quisque; conubia ligula habitasse. Augue augue ridiculus finibus per 
+                    mollis interdum gravida dictum ligula. Dictum sodales maecenas placerat sagittis tortor odio ex. Ut facilisi 
+                    integer convallis integer integer.
+                </p>
+            </div>
+        </div>
+    
+        <div class="container__text--card">
+            <!--Третій спосіб підключення css до html-->
+            <h2 style=" font-size: 20px; font-weight: bold; color: #0033cc;">Про компанію</h2>
+            <p class="card__text--item">
+                Sed non ante vitae nunc lacinia tristique nec quis nis1. Integer a fringilla elit, vitae accumsan massa.
+                Fusce ac tempor est. In ultricies mi sit amet nunc posuere eleifend. Cras vulputate hendrerit sodales.
+                Mauris lectus magna, feugiat vitae sagittis id, suscipit ac dui. Sed a orci a ipsum iaculis gravida.
+                Integer nec fringilla turpis. Sed dapibus turpis rutrum lacus mattis egestas. Aliquam viverra libero
+                vitae mi pellentesque lobortis. Donec varius elit in aliquam consectetur.
+            </p>
+            <p class="card__text--item">
+                Sed fermentum consequat mauris adipiscing condimentum. Phasellus id convallis nunc. Nullam vel
+                mollis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Cras nec neque vel risus accumsan sollicitudin quis ut velit. Fusce et libero hendrerit, accumsan enim
+                non, dictum eros. Proin sem justo, porta id magna quis, consequat scelerisque urna.
+            </p>
+            <input type="checkbox" id="more-about">
+            <label for="more-about" class="card__text--readmore"></label>
+            <div class="card__text--more">
+                <p class="card__text--item">
+                    Erat justo natoque parturient lobortis nec consectetur eu integer neque. Vehicula taciti auctor scelerisque; 
+                    porta est nostra. Torquent augue mattis duis pellentesque ante eu. Accumsan est gravida senectus massa arcu 
+                    eget. Condimentum integer dui suscipit torquent id. Donec cubilia posuere risus euismod senectus tellus lacinia. 
+                    Vehicula ligula phasellus sapien mauris, etiam velit nulla nulla.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+.container__menu {
+    display: flex;
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+    border-radius: 0 50px 50px 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.container__menu .container__menu--list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container__menu .menu__list--item {
+    position: relative;
+    padding: 15px 18px;
+    border-radius: 10% / 50%;
+}
+
+.container__menu .list__item--link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4b0082;
+}
+
+.container__menu .menu__list--item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 100%;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 1px 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.container__menu .menu__list--item:hover .list__item--link {
+    position: relative;
+}
+
+.container__menu .menu__list--item:hover .list__item--link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #4b0082;
+    animation: underline 0.3s ease forwards;
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.container__text {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.container__text--card {
+    position: relative;
+    width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 10px rgba(7, 54, 112, 0.1);
+}
+
+.container__text--card:hover {
+    box-shadow: 5px 5px 15px rgba(7, 54, 112, 0.354);
+    cursor: pointer;
+}
+
+.card__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0033cc;
+}
+
+.card__text--item {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.card__text--readmore {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0033cc;
+}
+
+.card__text--readmore:hover {
+    text-decoration: underline;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.card__text--more {
+    display: none;
+    margin-top: 10px;
+}
+
+input[type="checkbox"]:checked ~ .card__text--more {
+    display: block;
+}
+
+input[type="checkbox"]:checked + .card__text--readmore::after {
+    content: " сховати";
+}
+
+.card__text--readmore::after {
+    content: " детальніше...";
+}
